@@ -1,8 +1,8 @@
 # MAC-Stokes-Equation-Solver-Implementation
 
-# #引言以及快速测试指南
+## 引言以及快速测试指南
 
-本篇文章旨在介绍我的代码中的各个函数, 部分说明可能与报告中的内容相结合。
+本篇文章旨在介绍我的代码中的各个函数, 部分说明可能与报告中的内容相结合, 有关详细的实现以及理论推导请参考report.
 
 若您需要快速测试我的代码，复现报告中的结果。我为题目一二三分别准备了两个文件以供测试(一个实时脚本.mlx文件，一个脚本.m文件,
 它们中任意一个都能胜任测试任务)，它们分别如下,
@@ -19,36 +19,36 @@
 
 注：使用设备为gpu时因为CUDA启动等原因，通常最开始的样例较慢，若需要测时间，推荐重复测试
 
-# #提升限制算子
+## 提升限制算子
 
 $\text{lift.m, lift\_UV.m}$为提升算子的函数，前者提升对象为$U, V, W$，后者提升对象仅为$U, V$
 
 $\text{restrict.m, restrict\_UV.m}$为限制算子的函数，前者限制对象为$U, V, W$，后者限制对象仅为$U, V$
 
-# #矩阵作用函数
+## 矩阵作用函数
 
 $\text{apply\_A.m, apply\_B.m, apply\_Btrans.m}$分别为矩阵$\mathbf{A, B, B^T}$的作用函数
 
-# #初始化以及辅助函数
+## 初始化以及辅助函数
 
 initialize_v\_cycle.m：计算外力矩阵$F_U,F_V$,
 测试函数$u, v$在相应位置的值构成的矩阵$U_0, V_0$用于计算误差。
 
 figure_make.m给定数据绘制对数-对数图
 
-# #第一题所使用的专用函数
+## 第一题所使用的专用函数
 
 V_cycle.m: 根据输入参数使用DGS迭代和Vcycle多重网格求解离散Stokes方程
 
 RBGS_iteration.m: 实现了红黑GS迭代以及DGS迭代。
 
-# #第二题所使用的专用函数
+## 第二题所使用的专用函数
 
 Uzawa_iteration.m: 实现Uzawa迭代，其中使用共轭梯度法更新$\mathbf{U}$
 
 conjugate_grad.m: 实现共轭梯度法求解Stokes方程中的速度分量。
 
-# #第三题所使用的专用函数
+## 第三题所使用的专用函数
 
 Inexact_Uzawa_iteration.m：封装了Inexact Uzawa iteration
 
