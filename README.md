@@ -21,7 +21,7 @@
 
 ## 提升限制算子
 
-text{lift.m, lift_UV.m为提升算子的函数，前者提升对象为$U, V, W$，后者提升对象仅为$U, V$
+lift.m, lift_UV.m为提升算子的函数，前者提升对象为$U, V, W$，后者提升对象仅为$U, V$
 
 restrict.m, restrict_UV.m为限制算子的函数，前者限制对象为$U, V, W$，后者限制对象仅为$U, V$
 
