@@ -1,5 +1,7 @@
 # MAC-Stokes-Equation-Solver-Implementation
 
+本仓库包括了课程《数值代数》大作业的代码以及报告，大作业的内容见Problem.pdf
+
 ## 引言以及快速测试指南
 
 本篇文章旨在介绍我的代码中的各个函数, 部分说明可能与报告中的内容相结合, 有关详细的实现以及理论推导请参考report.
