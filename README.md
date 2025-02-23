@@ -21,13 +21,13 @@
 
 ## 提升限制算子
 
-$\text{lift.m, lift\_UV.m}$为提升算子的函数，前者提升对象为$U, V, W$，后者提升对象仅为$U, V$
+text{lift.m, lift_UV.m为提升算子的函数，前者提升对象为$U, V, W$，后者提升对象仅为$U, V$
 
-$\text{restrict.m, restrict\_UV.m}$为限制算子的函数，前者限制对象为$U, V, W$，后者限制对象仅为$U, V$
+restrict.m, restrict_UV.m为限制算子的函数，前者限制对象为$U, V, W$，后者限制对象仅为$U, V$
 
 ## 矩阵作用函数
 
-$\text{apply\_A.m, apply\_B.m, apply\_Btrans.m}$分别为矩阵$\mathbf{A, B, B^T}$的作用函数
+apply\_A.m, apply\_B.m, apply\_Btrans.m分别为矩阵$\mathbf{A, B, B^T}$的作用函数
 
 ## 初始化以及辅助函数
 
